@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maximilien Burq</title>
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/pace.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- js -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+</head>
+
+<body id="page">
+	<div class="container">
+		<header id="site-header">
+			<div class="row">
+				<div class="col-md-4 col-sm-5 col-xs-8">
+					<div class="logo">
+						<h1><a href="index.html"><b>Maximilien Burq</b></a></h1>
+					</div>
+				</div><!-- col-md-4 -->
+				<div class="col-md-8 col-sm-7 col-xs-4">
+					<nav class="main-nav" role="navigation">
+						<div class="navbar-header">
+							<button type="button" id="trigger-overlay" class="navbar-toggle">
+								<span class="ion-navicon"></span>
+							</button>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="cl-effect-11"><a href="index.html" data-hover="About">About</a></li>
+								<li class="cl-effect-11"><a href="research.html" data-hover="Research">Research</a></li>
+								<li class="cl-effect-11"><a href="projects.html" data-hover="Projects">Projects</a></li>
+								<li class="cl-effect-11"><a href="assets/M.BURQ_resume.pdf" data-hover="CV">CV</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div><!-- col-md-8 -->
+			</div>
+		</header>
+	</div>
+
+	<div class="content-body">
+		<div class="container">
+			<div class="row">
+				<aside class="col-md-3">
+					<div class="widget widget-recent-posts">
+						<h3 class="widget-title">Projects</h3>
+						<ul>
+							<li>
+								<a href="#readmission">
+									30 Day Hospital Readmission Risk Prediction.
+								</a>
+							</li>
+							<li>
+								<a href="#defibrillator">
+									ECG-based prediction of defibrillator efficiency on patients in
+									cardiac arrest.
+								</a>
+							</li>
+							<li>
+								<a href="#sports">
+									Reducing travel distances by
+									optimal allocation of sport tournaments.
+								</a>
+							</li>
+
+							<li>
+								<a href="#open_source">
+									Open Source Contributions.
+								</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+
+				<main class="col-md-9">
+					<article class="post post-1", id="readmission">
+						<header class="entry-header">
+							<h1 class="entry-title">
+								30 Day Hospital Readmission Risk Prediction.
+							</h1>
+						</header>
+						<div class="entry-content clearfix">
+							<p style="text-align: center;"><em>In collaboration with Joan LaRovere and Sebastien Boyer</em>
+							</p>
+							<p>
+								When discharged from hospital after an inpatient stay there is an 8 to 18% chance of readmission
+								to the hospital for the same condition within 30-days. This is both clinically bad for the patient and expensive to the medical insurer. Readmission within 30 days of discharge represents a
+								$41.3 billion dollar market and accounts for 11% of total hospital costs.
+								Clinicians strive to avoid readmission for their patients and do their best to be certain that they are clinically ready for discharge but obviously this system is imperfect. Building a predictive model of 30-day readmissions to assist hospitals and clinicians could aid this process.
+							</p>
+							<p>
+								In this project we implement a topic modeling algorithm that we combine with several supervized learning algorithms to provide a predictor with an AUC of 0.7. We also perform a clustering analysis that provides an easy-to-interpret way to understand our results.
+							</p>
+
+							<p>
+								Research report available
+								<a href="assets/readmission.pdf" target="_blank">
+									here.
+								</a>
+							</p>
+						</div>
+					</article>
+
+					<article class="post post-1", id="defibrillator">
+						<header class="entry-header">
+							<h1 class="entry-title">
+								ECG-based prediction of defibrillator efficiency on patients in
+								cardiac arrest.
+							</h1>
+						</header>
+						<div class="entry-content clearfix">
+							<p style="text-align: center;"><em>In collaboration with Sebastien Geerart, Vincent Bogart,
+								Cyril Colin, and Antoine Caillaud</em>
+							</p>
+							<p>
+								Automated electric defibrillator are a key part of first aid in the case of cardiac arrest.
+								The defibrillator measures the electric activity of the heart, and applies a shock if it detects
+								fibrillation.
+
+								There is scientific evidence that the shock may be harmful to the patient.
+								In particular, when the patient has been in cardiac arrest for a long time, it may be better
+								to first perform CPR for a few minutes.
+							</p>
+							<p>
+								In this project, we try to predict whether an electric shock will be succesfull in restoring
+								normal cardiac activity.
+								We used recordings of a 500Hz pre-shock electrocardiogram signal, to compute a series of
+								features, including FFT and AMSA.
+								We then trained models on these features to predict whether an electric shock was
+								going to be efficient. Efficiency here was defined by the absence of cardiac fibrillation
+								for at least 60s. This was labeled by a physician.
+
+								We managed to obtain reasonable accuracies in terms of prediction (order of 90%) but this
+								work would need to be improved in order to actually be applied in defibrillator algorithms.
+							</p>
+							<p>
+								Research report available
+								<a href="", target="_blank">
+									here
+								</a>
+								(in French).
+							</p>
+						</div>
+					</article>
+
+					<article class="post post-2", id="sports">
+						<header class="entry-header">
+							<h1 class="entry-title">
+								Reducing travel distances by optimal allocation of sport tournaments.
+							</h1>
+						</header>
+						<div class="entry-content clearfix">
+							<p style="text-align: center;"><em>In collaboration with Sebastien Boyer</em>
+							</p>
+							<p>
+								Amateur sports clubs often participate in local and regional championships.
+								We assume that the first phase of the championship consists of a round robin where every team
+								plays against all other teams. The winner advances to the second phase.
+								This round robin phase requires all participants to travel. When this travel is frequent
+								and over long distances, this not only places a burden on families, but also generates significant
+								CO<sub>2</sub> emissions.
+								In this project, we wish to find a way to group clubs that minimizes the sum of all travel distances.
+							</p>
+							<p>
+								We model this problem as a graph, where vertices represent clubs, and edges represent the
+								travel distance between two clubs.
+								We provide heuristic algorithms that use Semi Definite Programming, as well as Branch and Bound
+								techniques to find a partition that minimizes the sum of edges
+								between all the vertices of the same partition.
+								<!-- We programmed visualization tools in MATLAB and used SDP
+								solver programs to study real size problem. -->
+							</p>
+
+							<p>
+								Research report available
+								<a href="assets/MBurq_reducing_sport_emissions.pdf" target="_blank">
+									here
+								</a>
+								(in French).
+							</p>
+						</div>
+					</article>
+
+					<article class="post post-1", id="open_source">
+						<header class="entry-header">
+							<h1 class="entry-title">
+								Open Source Contributions.
+							</h1>
+						</header>
+						<div class="entry-content clearfix">
+							<div class="widget widget-recent-posts">
+								<ul>
+									<li>Matching algorithms in Julia LightGraphs.</li>
+									<li>OpenAI Gym environment for dynamic matching.</li>
+									<li>Code used in published papers (when possible).</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mobile Menu -->
+	<div class="overlay overlay-hugeinc">
+		<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+		<nav>
+			<ul>
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="assets/M.BURQ_resume.pdf">CV</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>
