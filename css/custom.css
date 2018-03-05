@@ -244,8 +244,16 @@ figure {
 	line-height: 1.9;
 	font-weight: 300;
 	color: #000;
-	text-align: justify;
-	text-justify: inter-word;
+}
+
+body{
+    text-align: left;
+}
+@media screen and (min-width: 48em){
+    body{
+        text-align: justify;
+				text-justify: inter-word;
+    }
 }
 
 .post-category,
