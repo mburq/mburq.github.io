@@ -81,8 +81,8 @@ p {
 	font-family: 'Ubuntu', sans-serif;
 	word-spacing: 1px;
 	letter-spacing: 0.01em;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 #single p,
@@ -244,8 +244,16 @@ figure {
 	line-height: 1.9;
 	font-weight: 300;
 	color: #000;
-	text-align: justify;
-	text-justify: inter-word;
+}
+
+body{
+    text-align: left;
+}
+@media screen and (min-width: 48em){
+    body{
+        text-align: justify;
+				text-justify: inter-word;
+    }
 }
 
 .post-category,
