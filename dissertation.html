@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115074405-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115074405-1');
+	</script>
+
+	<title>Maximilien Burq</title>
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/pace.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- js -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body id="page">
+	<div class="container">
+		<header id="site-header">
+			<div class="row">
+				<div class="col-md-4 col-sm-5 col-xs-8">
+					<div class="logo">
+						<h2><a href="index.html"><b>Maximilien Burq</b></a></h2>
+					</div>
+				</div><!-- col-md-4 -->
+				<div class="col-md-8 col-sm-7 col-xs-4">
+					<nav class="main-nav" role="navigation">
+						<div class="navbar-header">
+							<button type="button" id="trigger-overlay" class="navbar-toggle">
+								<span class="ion-navicon"></span>
+							</button>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="cl-effect-11"><a href="index.html" data-hover="About">About</a></li>
+                <li class="cl-effect-11"><a href="research.html" data-hover="Publications">Publications</a></li>
+								<li class="cl-effect-11"><a href="projects.html" data-hover="Projects">Projects</a></li>
+								<li class="cl-effect-11"><a href="assets/M.BURQ_resume.pdf" data-hover="CV">CV</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div><!-- col-md-8 -->
+			</div>
+		</header>
+	</div>
+
+	<div class="content-body">
+		<div class="container">
+			<div class="row">
+				<main class="col-xl-9">
+					<article class="post post-1">
+						<header class="entry-header">
+							<h1 class="entry-title">
+								Doctoral Dissertation
+							</h1>
+						</header>
+						<div class="entry-content clearfix">
+							<p>
+                We study marketplaces in which participants arrive over time, looking to interact with each
+                other. While such interactions have historically been decentralized, the past few years have
+                seen a dramatic increase in the number of internet-enabled platforms which facilitate the
+                process of connecting together, or matching, sets of two or more participants. We will focus
+                mainly on centralized matching markets such as kidney exchange and carpooling platforms.
+                In such platforms, the algorithm which determines whom to match and when to do so plays
+                an important role in the efficiency of the marketplace.
+              </p>
+              <p>
+                In the first part, we study the interface between the participant heterogeneity, the types
+                of matchings that are allowed, and the frequency at which the platform computes the alloca-
+                tions. We provide an empirical analysis of the effect of match frequency based on data from
+                major US Kidney exchange programs. We then study models that enable us to compare
+                the participants’ match rates and waiting times under varying matching policies. We show
+                both in theory and in practice that matching quickly can be beneficial, compared to policies
+                which try to increase opportunities for optimization through artificial waiting.
+              </p>
+              <p>
+                Until now, the theory of matching algorithms has focused mostly on static environments
+                and little is known in the case where all participants arrive and depart dynamically. In our
+                second part, we help bridge this gap by introducing a new theoretical problem for dynamic
+                matching when anyone can arrive online. We provide new algorithms with state-of-the-art
+                theoretical guarantees, both in the case of adversarial and random order inputs. Finally, we
+                show that these algorithms perform well on kidney exchange and carpooling data.
+							</p>
+              <p>
+                <a href="assets/mburq_thesis.pdf" target="_blank">[full text]</a>
+              </p>
+						</div>
+					</article>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mobile Menu -->
+	<div class="overlay overlay-hugeinc">
+		<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+		<nav>
+			<ul>
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="assets/M.BURQ_resume.pdf">CV</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>
