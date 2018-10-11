@@ -1,2 +1,2 @@
 # mburq.github.io
-My personal website
+My personal website, can be found [here](mburq.github.io)
